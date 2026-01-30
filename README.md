@@ -1,73 +1,39 @@
-# React + TypeScript + Vite
+# frontend - ggggg
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Hello ggggg,
 
-Currently, two official plugins are available:
+## Overview
+In this assignment, you will be tasked with building a simple web application using React. The application will demonstrate your ability to create a user-friendly interface, manage state, and implement responsive design principles. 
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Functional Requirements
+1. **User Authentication**: Implement a login and registration form. Users should be able to register with their email and password, and log in to access the application.
+   - Use local state management to handle form inputs and validation.
+   - Provide feedback for successful or failed login attempts.
 
-## React Compiler
+2. **Dashboard Display**: After logging in, users should be redirected to a dashboard that displays a welcome message and a list of items (e.g., tasks, notes).
+   - Use a mock API to fetch the list of items and display them in a user-friendly manner.
+   - Each item should have options to edit or delete.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+3. **Responsive Design**: Ensure that the application is responsive and works well on both desktop and mobile devices.
+   - Use CSS Flexbox or Grid for layout.
+   - Ensure that all components are accessible and usable on various screen sizes.
 
-## Expanding the ESLint configuration
+## Technical Expectations
+- You should use React for building the application.
+- State management can be handled using React's built-in hooks (useState, useEffect).
+- Styling can be done using CSS Modules or styled-components.
+- Ensure code quality with appropriate comments and documentation.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## Deliverables
+- A GitHub repository containing your code.
+- A README file with instructions on how to run the application locally.
+- A brief description of your design choices and any challenges you faced during development.
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## Time Estimate
+We expect this assignment to take approximately 5-7 hours to complete.
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+## Submission Instructions
+Once you have completed the assignment, please create a pull request to submit your work. Ensure that your code is well-organized and follows best practices.
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
-
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## Final Note
+This assignment will be reviewed and discussed in our upcoming interview. We look forward to seeing your work and discussing your approach!
